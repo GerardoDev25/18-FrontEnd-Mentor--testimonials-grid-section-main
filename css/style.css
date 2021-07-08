@@ -1,0 +1,134 @@
+/* *************************************  */
+/* ? ************* general *************  */
+/* *************************************  */
+
+:root {
+   --Moderate-violet: hsl(263, 55%, 52%);
+   --Very-dark-grayish-blue: hsl(217, 19%, 35%);
+   --Very-dark-blackish-blue: hsl(219, 29%, 14%);
+   --White: hsl(0, 0%, 100%);
+
+   /* ### Neutral */
+
+   --Light-gray: hsl(0, 0%, 81%);
+   --Light-grayish-blue: hsl(210, 46%, 95%);
+
+   font-size: 13px;
+   font-family: "Barlow Semi Condensed", sans-serif;
+}
+
+*,
+*::after,
+*::before {
+   box-sizing: border-box;
+}
+
+html,
+body {
+   width: 100%;
+   min-width: 375px;
+   height: auto;
+   background-color: var(--Light-grayish-blue);
+   padding-top: 3rem;
+   padding-bottom: 2rem;
+}
+
+/* *************************************  */
+/* ? ************* card *************  */
+/* *************************************  */
+.user {
+   /* outline: 2px dotted saddlebrown; */
+   display: flex;
+   gap: 1rem;
+   align-items: center;
+}
+
+.user__img {
+   display: block;
+   width: 40px;
+   height: 40px;
+   border-radius: 50%;
+}
+
+.user__name {
+   font-size: 1.3rem;
+   font-weight: 600;
+}
+.user__status {
+   opacity: 0.7;
+}
+.user__name,
+.user__status {
+   margin-top: 0.3rem;
+   margin-bottom: 0.3rem;
+}
+
+/* *************************************  */
+/* ? ************* card *************  */
+/* *************************************  */
+
+.card {
+   /* outline: 3px dotted black; */
+   width: 85%;
+   margin-left: auto;
+   margin-right: auto;
+   border-radius: 1rem;
+   margin-bottom: 3rem;
+   padding: 2rem;
+}
+
+.card__paragraph-1 {
+   font-weight: 600;
+   font-size: 1.57rem;
+}
+
+.card__paragraph-2 {
+   font-weight: 500;
+   opacity: 0.8;
+}
+
+.card-1,
+.card-2,
+.card-4 {
+   color: var(--White);
+}
+.card-1 .card__paragraph-2,
+.card-2 .card__paragraph-2,
+.card-4 .card__paragraph-2 {
+   color: var(--Light-gray);
+   line-height: 160%;
+}
+.card-1 .card__paragraph-1,
+.card-2 .card__paragraph-1,
+.card-3 .card__paragraph-1,
+.card-5 .card__paragraph-1,
+.card-4 .card__paragraph-1 {
+   line-height: 140%;
+}
+
+.card-1 {
+   background-color: var(--Moderate-violet);
+   background-image: url("../images/bg-pattern-quotation.svg");
+   background-repeat: no-repeat;
+   background-position-y: top;
+   background-position-x: 90%;
+   background-size: 40%;
+}
+
+.card-2 {
+   background-color: var(--Very-dark-grayish-blue);
+}
+
+.card-4 {
+   background-color: var(--Very-dark-blackish-blue);
+}
+
+.card-3,
+.card-5 {
+   background-color: var(--White);
+   color: var(--Very-dark-grayish-blue);
+}
+.card-3 .card__paragraph-2,
+.card-5 .card__paragraph-2 {
+   line-height: 160%;
+}
